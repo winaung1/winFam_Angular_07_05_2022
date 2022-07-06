@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+}
+.firstName, .lastName, .password, .confirmPassword{
+    padding: 10px;
+}
