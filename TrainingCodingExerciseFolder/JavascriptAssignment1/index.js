@@ -329,6 +329,26 @@ factors(42)
 
  
 
+let countCharacters = (string) => {
+    let hashMap = {};
+    for (let i = 0; i < string.length; i++) {
+        const ch = string[i];
+      if(!hashMap[ch]){
+        hashMap[ch] = 0
+      }
+      hashMap[ch]++;
+    }
+      for(let ch in hashMap){
+        console.log(ch)
+      }
+    };
+    
+    countCharacters("thequickbrownfoxjumpsoverthelazydog");
+
+ 
+
+// 17. Write a JavaScript function to get the number of occurrences of each letter in specified string.
+
 function occurrences(word){
 
     let letters = word.split('')
@@ -341,7 +361,7 @@ function occurrences(word){
 
     })
 
-    // return count;
+    return count;
 
     console.log(count)
 
@@ -349,33 +369,7 @@ function occurrences(word){
 
  
 
-occurrences("thequickbrownfoxjumpsoverthelazydog")
-
- 
-
-// 17. Write a JavaScript function to get the number of occurrences of each letter in specified string.
-
-// function occurrences(word){
-
-//     let letters = word.split('')
-
-//     let count = [];
-
-//     letters.forEach(letter => {
-
-//         count[letter] = count[letter] ? (count[letter] + 1) : 1
-
-//     })
-
-//     return count;
-
-//     console.log(count)
-
-// }
-
- 
-
-// occurrences("hello")
+occurrences("hello")
 
 // 18. Write a function for searching JavaScript arrays with a binary search.
 
@@ -383,33 +377,33 @@ occurrences("thequickbrownfoxjumpsoverthelazydog")
 
  
 
-// function binarySearch(values, target){
+function binarySearch(values, target){
 
-//     const arr = String(values).split('')
-
- 
-
-//     let left = 0;
-
-//     let right = arr.length-1;
-
-//     while(left <= right){
-
-//        let mid = Math.floor((left + right) / 2)
-
-//        if(target === arr[mid]){
-
-//            console.log(mid)
-
-//        }
+    const arr = String(values).split('')
 
  
 
-//    }
+    let left = 0;
+
+    let right = arr.length-1;
+
+    while(left <= right){
+
+       let mid = Math.floor((left + right) / 2)
+
+       if(target === arr[mid]){
+
+           console.log(mid)
+
+       }
+
+ 
+
+   }
 
   
 
-// }
+}
 
  
 
